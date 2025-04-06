@@ -8,9 +8,9 @@ import json
 
 load_dotenv()
 
-st.set_page_config(page_title="Groq Agentic Assistant 🚀", layout="centered")
+st.set_page_config(page_title="Weather Agentic Assistant 🚀", layout="centered")
 
-st.title("🤖 Groq-Powered Agent")
+st.title("🤖 Weather Agent")
 st.markdown("Type a question and let Groq LLM respond intelligently!")
 
 user_input = st.text_input("Enter your query:", "")
@@ -29,7 +29,8 @@ def add_two_numbers(text: str) -> str:
         return "Please input two comma-separated integers like: 3,5"
 
 def get_my_name(text: str) -> str:
-    return text
+    output = "I am your friendly weather agent."
+    return output
 
 def get_city_temperature(text: str) -> str:
     """Get the current temperature in a given city."""
